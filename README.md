@@ -1,5 +1,4 @@
 # Estacionamento
-Resumo do Projeto
 Este projeto é um sistema de estacionamento para desktop. Ele usa um banco de dados MySQL para gerenciar informações. O projeto inclui:
  Arquivos e Pastas,
 MySQL,
