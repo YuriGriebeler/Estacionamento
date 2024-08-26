@@ -48,20 +48,28 @@ A classe `Program` é o ponto de entrada principal para a aplicação de Windows
   - **`Application.SetCompatibleTextRenderingDefault(false)`**: Define o método de renderização de texto compatível para os controles da interface do usuário.
   - **`Application.Run(new FormPrincipal())`**: Inicia a aplicação e exibe o formulário principal (`FormPrincipal`), que é a janela principal da aplicação.
 
-Este código configura a aplicação para usar os recursos visuais do Windows e inicia o formulário principal da aplicação.
-
-
-
-
-
-
-
-
-
-
-
-
+   Este código configura a aplicação para usar os recursos visuais do Windows e inicia o formulário principal da aplicação.
    Esta classe é usada para registrar e gerenciar o período de estacionamento de cada veículo.
+
+
+
+   ## Pasta REPOSITORIO
+
+As seguintes classes gerenciam a interação com o banco de dados para o sistema de estacionamento:
+
+1. **RepositorioTabelaPreco**
+   - **`connectionString`**: Configura a conexão com o banco de dados MySQL.
+   - **`BuscarTabelaPrecoPorData(DateTime data)`**: Recupera uma tabela de preços com base na data fornecida, retornando um objeto `TabelaPreco` se a data estiver dentro do período de vigência.
+   - **`AdicionarTabelaPreco(TabelaPreco tabelaPreco)`**: Insere uma nova tabela de preços no banco de dados com os valores especificados.
+
+2. **RepositorioVeiculo**
+   - **`connectionString`**: Configura a conexão com o banco de dados MySQL.
+   - **`AdicionarVeiculo(Veiculo veiculo)`**: Adiciona um novo veículo ao banco de dados, registrando a placa e a data de entrada.
+   - **`RegistrarSaida(string placa, DateTime dataSaida)`**: Atualiza o registro de um veículo para definir a data e hora de saída.
+   - **`BuscarVeiculoPorPlaca(string placa)`**: Busca um veículo no banco de dados pela placa, retornando um objeto `Veiculo` se o veículo estiver presente e não tiver saído.
+
+Ambas as classes utilizam a instrução `using` para garantir que a conexão com o banco de dados seja corretamente fechada após o uso, prevenindo vazamentos de recursos.
+
 
 
 
