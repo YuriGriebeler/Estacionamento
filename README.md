@@ -18,6 +18,8 @@ Os seguintes formulários fazem parte do sistema de estacionamento simples:
 
    Os dados da tabela de preços são gerenciados através da classe `RepositorioTabelaPreco`.
 
+
+
    ## Pasta MODELS
 
 As seguintes classes representam os modelos de dados no sistema de estacionamento simples:
@@ -34,6 +36,30 @@ As seguintes classes representam os modelos de dados no sistema de estacionament
    - **`Placa`**: A placa do veículo, usada para identificação e busca.
    - **`DataEntrada`**: Data e hora em que o veículo entrou no estacionamento.
    - **`DataSaida`**: Data e hora em que o veículo saiu do estacionamento. Esta propriedade é opcional e pode ser `null` se o veículo ainda estiver no estacionamento.
+
+
+  
+## Pasta PROGRAM
+
+A classe `Program` é o ponto de entrada principal para a aplicação de Windows Forms no sistema de estacionamento simples. Ela contém:
+
+- **Método `Main`**: O método principal da aplicação, que é o ponto de entrada quando o aplicativo é iniciado.
+  - **`Application.EnableVisualStyles()`**: Habilita os estilos visuais do Windows para melhorar a aparência dos controles da interface do usuário.
+  - **`Application.SetCompatibleTextRenderingDefault(false)`**: Define o método de renderização de texto compatível para os controles da interface do usuário.
+  - **`Application.Run(new FormPrincipal())`**: Inicia a aplicação e exibe o formulário principal (`FormPrincipal`), que é a janela principal da aplicação.
+
+Este código configura a aplicação para usar os recursos visuais do Windows e inicia o formulário principal da aplicação.
+
+
+
+
+
+
+
+
+
+
+
 
    Esta classe é usada para registrar e gerenciar o período de estacionamento de cada veículo.
 
