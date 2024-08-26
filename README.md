@@ -1,6 +1,14 @@
 # Estacionamento
-Um projeto aplicado em Desktop para a criação de um controle de estacionamento, aqui está alguns comentários sobre esses códigos:
-
+Resumo do Projeto
+Este projeto é um sistema de estacionamento para desktop. Ele usa um banco de dados MySQL para gerenciar informações. O projeto inclui:
+Arquivos e Pastas;
+MySQL;
+Models; 
+Forms; 
+Program; 
+Principais Funções;
+Adicionar e buscar veículos;
+Configuração.
 
 ## Pasta FORMS
 
@@ -72,7 +80,7 @@ Ambas as classes utilizam a instrução `using` para garantir que a conexão com
 
 
 
-### MySQL
+## MySQL
 
 Para integrar o MySQL ao projeto, siga estas etapas para criar e implementar a pasta `MySQL`:
 
