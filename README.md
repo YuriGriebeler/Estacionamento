@@ -81,29 +81,29 @@ Ambas as classes utilizam a instrução `using` para garantir que a conexão com
 
 ## MySQL
 
-Para integrar o MySQL ao projeto, siga estas etapas para criar e implementar a pasta `MySQL`:
+Para integrar o MySQL ao projeto, eu seguiria estas etapas para criar e implementar a pasta `MySQL`:
 
 1. **Criar a Pasta `MySQL`**
-   - No seu projeto, crie uma nova pasta chamada `MySQL` (ou `DAL`, se preferir um nome mais genérico) para armazenar as classes responsáveis pela interação com o banco de dados MySQL.
+   - No projeto, eu criaria uma nova pasta chamada `MySQL' para armazenar as classes responsáveis pela interação com o banco de dados MySQL.
    - Esta pasta conterá classes que gerenciam a conexão e operações com o banco de dados.
 
 2. **Implementar Classes na Pasta `MySQL`**
-   - **`RepositorioTabelaPreco`** e **`RepositorioVeiculo`**: Coloque essas classes na pasta `MySQL` para gerenciar as tabelas de preços e veículos no banco de dados.
+   - **`RepositorioTabelaPreco`** e **`RepositorioVeiculo`**: Colocar essas classes na pasta `MySQL` para gerenciar as tabelas de preços e veículos no banco de dados.
 
    **Exemplo de Estrutura de Pastas:**
 
 3. **Configuração do MySQL**
-- **Instalar o MySQL Connector**: Certifique-se de que o MySQL Connector para .NET está instalado no seu projeto. Você pode instalar o pacote NuGet `MySql.Data` através do Package Manager Console com o comando:
+- **Instalar o MySQL Connector**: Certificar de que o MySQL Connector para .NET está instalado no projeto. Assim podendo instalar o pacote NuGet `MySql.Data` através do Package Manager Console com o comando:
   ```bash
   Install-Package MySql.Data
   ```
-- **Configurar a String de Conexão**: Ajuste a string de conexão em suas classes `RepositorioTabelaPreco` e `RepositorioVeiculo` para corresponder às suas configurações de banco de dados MySQL (servidor, banco de dados, usuário e senha).
+- **Configurar a String de Conexão**: Ajustar a string de conexão em classes `RepositorioTabelaPreco` e `RepositorioVeiculo` para corresponder às suas configurações de banco de dados MySQL (servidor, banco de dados, usuário e senha).
 
 4. **Criar o Banco de Dados e Tabelas**
-- **Banco de Dados**: No MySQL, crie um banco de dados, por exemplo, `estacionamento`.
-- **Tabelas**: Crie as tabelas `Veiculos` e `TabelaPreco` com os esquemas apropriados para armazenar os dados.
+- **Banco de Dados**: No MySQL, criar um banco de dados, por exemplo, `estacionamento`.
+- **Tabelas**: Criar as tabelas `Veiculos` e `TabelaPreco` com os esquemas apropriados para armazenar os dados.
 
-**Exemplo de SQL para Criar Tabelas:**
+**Exemplo da tabela SQL que eu criaria:**
 ```sql
 CREATE TABLE Veiculos (
     Placa VARCHAR(10) PRIMARY KEY,
