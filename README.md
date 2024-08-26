@@ -2,7 +2,7 @@
 Um projeto aplicado em Desktop para a criação de um controle de estacionamento, aqui está alguns comentários sobre esses códigos:
 
 
-# Pasta FORMS
+## Pasta FORMS
 
 Os seguintes formulários fazem parte do sistema de estacionamento simples:
 
@@ -18,7 +18,7 @@ Os seguintes formulários fazem parte do sistema de estacionamento simples:
 
    Os dados da tabela de preços são gerenciados através da classe `RepositorioTabelaPreco`.
 
-   ### Pasta MODELS
+   ## Pasta MODELS
 
 As seguintes classes representam os modelos de dados no sistema de estacionamento simples:
 
